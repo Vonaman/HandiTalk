@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+    /*Couleur*/
+    --color-blanc : oklch(98.9% 0.011379670903899743 84.57778773429995);
+    --color-noir : oklch(19.66% 0.0084 84.58);
+    --color-bleu : oklch(77.06% 0.0847 190.73);
+    --color-vert : oklch(65.48% 0.0758 149.84);
+    --color-orange : oklch(71.6% 0.1564 53.47);
+
+    /*Typographie*/
+    --font-titre : "coolvetica", sans-serif;
+    --font-paragraphe : "din 2014", sans-serif;
+
+    /*Taille font*/
+    --text-titre-ordi : 96px;
+    --text-sous-ordi : 60px;
+    --text-para-ordi : 24px;
+
+    --text-titre-tel : 30px;
+    --text-sous-tel : 22px;
+    --text-para-tel : 14px;
+
+    /*Stroke*/
+    --text-stroke : -webkit-text-stroke: 1px white; 
+}

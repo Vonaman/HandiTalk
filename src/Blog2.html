@@ -1,0 +1,259 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HandiTalk</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nxh3bfr.css">
+	<link rel="shortcut icon" href="../assets/Logo_header.svg" type="image/x-icon">
+</head>
+<body class="flex flex-col items-center overflow-y-scroll">
+
+    <!--Nav ordi-->
+	<nav class="top-8 flex justify-between z-50 items-center w-4/5 fixed backdrop-blur-3xl rounded-full p-8">
+		<a class="text-3xl font-bold leading-none" href="#">
+			<img src="../assets/Logo_header.svg" alt="Logo de HandiTalk" class="w-1/2 h-auto">
+		</a>
+		<div class="lg:hidden">
+			<button class="navbar-burger flex items-center text-blue-600 p-3">
+				<img src="/assets/Menu_burger.svg" alt="Menu burger du header">
+			</button>
+		</div>
+		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+			<li><a class="text-3xl text-noir font-bold font-titre hover:scale-105 transition-500" href="#propos">À propos</a></li>
+			<li><a class="text-3xl text-noir font-bold font-titre hover:scale-105 transition-500" href="#">Équipe</a></li>
+			<li><a class="text-3xl text-noir font-bold font-titre hover:scale-105 transition-500" href="#">Blog</a></li>
+			<li><a class="text-3xl text-noir font-bold font-titre hover:scale-105 transition-500" href="#formation">Formation</a></li>
+		</ul>   
+		<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-bleu hover:bg-orange text-3xl text-blanc font-bold font-titre rounded-xl transition duration-500" href="#">Installation</a>
+	</nav>
+
+	<!--Nav tel-->
+	<div class="navbar-menu relative z-50 hidden">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-blanc border-r border-black overflow-y-auto">
+			<div class="flex items-center mb-8">
+				<a class="mr-auto text-3xl font-bold leading-none" href="#">
+					<img src="../assets/Logo_header.svg" alt="Logo de HandiTalk" class="w-1/2 h-auto">
+				</a>
+				<button class="navbar-close">
+					<img src="/assets/Menu_burger_croix.svg" alt="Croix du menu burger">
+				</button>
+			</div>
+			<div>
+				<ul>
+					<li class="mb-1">
+						<a class="text-titre-tel text-noir font-bold font-titre" href="#propos">À propos</a>
+					</li>
+					<li class="mb-1">
+						<a class="text-titre-tel text-noir font-bold font-titre" href="#">Équipe</a>
+					</li>
+					<li class="mb-1">
+						<a class="text-titre-tel text-noir font-bold font-titre" href="#">Blog</a>
+					</li>
+					<li class="mb-1">
+						<a class="text-titre-tel text-noir font-bold font-titre" href="#formation">Formation</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mt-auto">
+				<div class="pt-6">
+					<a class="block mb-3 leading-loose py-2 px-6 bg-bleu hover:bg-orange text-center text-titre-tel text-blanc font-bold font-titre rounded-xl transition duration-500" href="#">Installation</a>
+				</div>
+				<p class="my-4 text-xs text-center text-gray-400">
+					<span>Copyright © 2025</span>
+				</p>
+			</div>
+		</nav>
+	</div>
+    
+
+    <div class="flex flex-row justify-between items-center w-4/5 h-auto mx-[10%] mt-96 gap-48">
+		<img src="../assets/Blog/fauteil_mur.jpeg" alt="" class="w-1/2 h-72 bg-gray-600 rounded-4xl shadow-2xl shadow-vert">
+        <div class="flex flex-col items-start justify-evenly w-2/3">
+            <h1 class="font-titre text-noir text-sous-tel lg:text-sous-ordi text-center">
+                HandiTalk : 
+            </h1>
+            <h2 class="font-titre text-noir text-para-tel lg:text-para-ordi">
+                L’Espoir d’une Communication Accessible pour Tous
+            </h2>
+        </div>
+    </div>
+
+    <ul class="flex flex-col justify-between items-start w-4/5 h-auto mx-[10%] mt-32 gap-8">
+        <li class="list-disc"><a href="#1" class="text-noir font-paragraphe text-para-tel lg:text-para-ordi">Introduction : HandiTalk, un symbole d’espoir</a></li>
+        <li class="list-disc"><a href="#2" class="text-noir font-paragraphe text-para-tel lg:text-para-ordi">Briser les barrières : Une communication pour tous</a></li>
+        <li class="list-disc"><a href="#3" class="text-noir font-paragraphe text-para-tel lg:text-para-ordi">Des témoignages inspirants</a></li>
+        <li class="list-disc"><a href="#4" class="text-noir font-paragraphe text-para-tel lg:text-para-ordi">Un impact sur l’autonomie et la confiance en soi</a></li>
+        <li class="list-disc"><a href="#5" class="text-noir font-paragraphe text-para-tel lg:text-para-ordi">Conclusion : Ensemble vers une société inclusive</a></li>
+    </ul>
+
+    <div class="flex flex-row justify-between items-center w-4/5 h-auto mx-[10%] mt-32 gap-48 " id="1">
+        <div class="flex flex-col justify-between items-start w-2/3">
+            <h2 class="font-titre text-noir text-sous-tel lg:text-[36px] text-center">
+                HandiTalk, un symbole d’espoir
+            </h2>
+            <p class="text-noir font-paragraphe text-para-tel lg:text-para-ordi">
+                La communication est un droit fondamental. Pourtant, pour des millions de personnes en situation de handicap ou avec des difficultés spécifiques, elle reste un défi au quotidien. HandiTalk est une réponse claire et inclusive à cette problématique. En combinant technologie moderne et empathie humaine, l'application offre aux utilisateurs une chance unique de s'exprimer, de se connecter et de vivre pleinement leur autonomie. Avec son interface intuitive et ses outils personnalisables, HandiTalk incarne l’espoir d’un monde où chacun peut avoir une voix et se faire entendre.
+            </p>
+        </div> 
+		<img src="../assets/Blog/joie_fauteil.jpeg" alt="" class="w-1/2 h-72 bg-gray-600 rounded-4xl shadow-2xl shadow-vert">
+    </div>
+
+    <div class="flex flex-row justify-between items-center w-4/5 h-auto mx-[10%] mt-32 gap-48 " id="2">
+        <div class="flex flex-col justify-between items-center w-full">
+            <h2 class="font-titre text-noir text-sous-tel lg:text-[36px] text-center">
+                Une communication pour tous
+            </h2>
+            <p class="text-noir font-paragraphe text-para-tel lg:text-para-ordi text-center">
+                HandiTalk a été conçu pour répondre à une problématique universelle : la difficulté à communiquer. Grâce à ses pictogrammes, ses sons intuitifs et son interface adaptée, l’application permet de surmonter les barrières linguistiques et cognitives. Ces outils simples mais puissants offrent une solution tangible aux utilisateurs qui rencontrent des obstacles dans leur vie quotidienne. Que ce soit pour une demande basique, une émotion à exprimer ou un besoin urgent, HandiTalk facilite la compréhension, peu importe les capacités de l’utilisateur.
+            </p>
+        </div> 
+    </div>
+
+    <div class="flex flex-row-reverse justify-between items-center w-4/5 h-auto mx-[10%] mt-32 gap-48 " id="3">
+        <div class="flex flex-col justify-between items-start w-2/3">
+            <h2 class="font-titre text-noir text-sous-tel lg:text-[36px] text-center">
+                Des témoignages inspirants
+            </h2>
+            <p class="text-noir font-paragraphe text-para-tel lg:text-para-ordi">
+                De nombreux utilisateurs témoignent de l’impact transformateur de HandiTalk. Pour certaines familles, l'application a permis à des enfants non-verbaux de communiquer pour la première fois. Pour d’autres, elle a offert une solution indispensable dans des situations complexes, comme les rendez-vous médicaux ou les interactions sociales. Une mère explique : « HandiTalk a changé notre vie. Mon fils peut enfin exprimer ses émotions et besoins sans frustration. » Ces témoignages renforcent l'idée qu'une simple innovation peut avoir un impact immense sur la qualité de vie.
+            </p>
+        </div> 
+		<img src="../assets/Blog/lego_cest_cool.jpeg" alt="" class="w-1/2 h-72 bg-gray-600 rounded-4xl shadow-2xl shadow-vert">
+    </div>
+
+    <div class="flex flex-row justify-between items-center w-4/5 h-auto mx-[10%] mt-32 gap-48 " id="4">
+        <div class="flex flex-col justify-between items-center w-full">
+            <h2 class="font-titre text-noir text-sous-tel lg:text-[36px] text-center">
+                Un impact sur l’autonomie et la confiance en soi
+            </h2>
+            <p class="text-noir font-paragraphe text-para-tel lg:text-para-ordi text-center">
+                Au-delà de l'aspect fonctionnel, HandiTalk est un outil d'émancipation. En donnant aux utilisateurs les moyens de se faire comprendre, l’application renforce leur autonomie et leur confiance en eux. Les utilisateurs apprennent non seulement à s'exprimer, mais aussi à interagir avec le monde qui les entoure. Cela leur permet de devenir des participants actifs de leur vie, qu’il s’agisse de prendre des décisions, de partager des idées ou de vivre des expériences enrichissantes.
+            </p>
+        </div> 
+    </div>
+
+    <div class="flex flex-row justify-between items-center w-4/5 h-auto mx-[10%] mt-32 gap-48 " id="5">
+        <div class="flex flex-col justify-between items-start w-2/3">
+            <h2 class="font-titre text-noir text-sous-tel lg:text-[36px] text-center">
+                Conclusion : Ensemble vers une société inclusive
+            </h2>
+            <p class="text-noir font-paragraphe text-para-tel lg:text-para-ordi">
+                HandiTalk n'est pas qu'une application. C'est un symbole de progrès vers une société où chaque voix, quelle qu'elle soit, compte. Avec ses outils innovants et son design accessible, l'application offre un avenir plus prometteur pour des millions de personnes. Ensemble, construisons un monde où chacun peut s’exprimer librement.
+            </p>
+        </div> 
+		<img src="../assets/Blog/check_moi_ca.jpeg" alt="" class="w-1/2 h-72 bg-gray-600 rounded-4xl shadow-2xl shadow-vert">
+    </div>
+
+
+
+    
+	<!--Footer-->
+
+	<footer class="relative hidden mt-16 lg:block flex-col justify-center items-center p-16 pb-4 bg-noir w-full h-auto z-40">
+		<div class="flex flex-row justify-between items-start w-full mb-11">
+			<ul class="flex flex-col lg:w-1/3 h-auto gap-16">
+				<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi  decoration-solid" href="">Qui sommes nous ?</a></li>
+				<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi decoration-1 decoration-solid" href="">Notre formation</a></li>
+				<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi decoration-1 decoration-solid" href="">Téléchargement</a></li>
+				<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi decoration-1 decoration-solid" href="">Nos derniers articles</a></li>
+			</ul>
+
+			<div class="flex flex-col justify-between items-center lg:w-1/3 h-auto gap-10">
+				<img src="../assets/couleur fauteuil simple_petit.svg" class="w-64 h-64" alt="">
+				<div class="flex flex-col gap-16 lg:flex-row justify-between items-center border-blanc border-t-2 pt-16">
+					<div class="flex flex-row items-center justify-center gap-2 rounded-2xl p-4 lg:gap-4 bg-orange lg:rounded-4xl lg:py-4 lg:px-10">
+						<img src="../assets/google_play.svg" alt="">
+						<img src="../assets/google_play_2.svg" alt="">
+					</div>
+					<div class="flex flex-row items-center justify-center gap-2 rounded-2xl p-4 lg:gap-4 bg-vert lg:rounded-4xl lg:p-4 lg:px-10">
+						<img src="../assets/app_store.svg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-col justify-between items-center w-1/3 h-auto gap-8">
+				<h2 class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi decoration-solid decoration-1 decoration-blanc">
+					Nous contacter
+				</h2>
+				<div class="flex flex-col justify-between items-center gap-4">
+					<a href="" class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi">+33 1 02 03 04 05</a>
+					<a href="" class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi">contact@handitalk.org</a>
+				</div>
+				<div class="flex flex-row flex-wrap justify-evenly items-center gap-8 w-56">
+					<img src="../assets/reseaux/facebook.svg" alt="" class="h-12 w-auto hover:scale-110 duration-500">
+					<img src="../assets/reseaux/insta.svg" alt="" class="h-12 w-auto hover:scale-110 duration-500">
+					<img src="../assets/reseaux/linkedIn.svg" alt="" class="h-12 w-auto hover:scale-110 duration-500">
+					<img src="../assets/reseaux/TikTok.svg" alt="" class="h-12 w-auto hover:scale-110 duration-500">
+					<img src="../assets/reseaux/Ytb.svg" alt="" class="h-12 w-auto hover:scale-110 duration-500">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="border-t-4 border-blanc flex justify-center ">
+			<p class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi">
+				© 2024HandiTalk. Tous droits réservés. Consultez nos mentions légales et notre politique de confidentialité.
+			</p>
+		</div>
+	</footer>
+
+
+
+
+
+	<footer class="relativex flex-col justify-center items-center p-16 pb-4 bg-noir w-full h-auto z-40 lg:hidden">
+		<div class="flex flex-col justify-between items-start w-full mb-11 gap-9">
+
+			<div class="flex flex-col justify-between items-center h-auto gap-10">
+				<img src="../assets/couleur fauteuil simple_petit.svg" class="w-36 h-36" alt="">
+				<div class="flex gap-16 flex-row justify-between items-center border-blanc border-t-2 pt-4">
+					<div class="flex flex-row items-center justify-center gap-2 rounded-2xl p-4 lg:gap-4 bg-orange lg:rounded-4xl lg:py-4 lg:px-10">
+						<img src="../assets/ggplay.svg" alt="">
+					</div>
+					<div class="flex flex-row items-center justify-center gap-2 rounded-2xl p-4 lg:gap-4 bg-vert lg:rounded-4xl lg:p-4 lg:px-10">
+						<img src="../assets/app_store.svg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-row justify-between items-start w-full">
+				<ul class="flex flex-col w-1/2 h-auto gap-4">
+					<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi  decoration-solid" href="">Qui sommes nous ?</a></li>
+					<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi decoration-1 decoration-solid" href="">Notre formation</a></li>
+					<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi decoration-1 decoration-solid" href="">Téléchargement</a></li>
+					<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi decoration-1 decoration-solid" href="">Nos derniers articles</a></li>
+				</ul>
+	
+				<div class="flex flex-col justify-between items-center w-1/2 h-auto gap-4">
+					<h2 class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi decoration-solid decoration-1 decoration-blanc">
+						Nous contacter
+					</h2>
+					<div class="flex flex-col justify-between items-center gap-2">
+						<a href="" class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi">+33 1 02 03 04 05</a>
+						<a href="" class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi">contact@handitalk.org</a>
+					</div>
+					<div class="flex flex-row flex-wrap justify-evenly items-center gap-4 w-32">
+						<img src="../assets/reseaux/facebook.svg" alt="" class="h-6 w-auto hover:scale-110 duration-500">
+						<img src="../assets/reseaux/insta.svg" alt="" class="h-6 w-auto hover:scale-110 duration-500">
+						<img src="../assets/reseaux/linkedIn.svg" alt="" class="h-6 w-auto hover:scale-110 duration-500">
+						<img src="../assets/reseaux/TikTok.svg" alt="" class="h-6 w-auto hover:scale-110 duration-500">
+						<img src="../assets/reseaux/Ytb.svg" alt="" class="h-6 w-auto hover:scale-110 duration-500">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="border-t-4 border-blanc flex justify-center ">
+			<p class="font-paragraphe text-[6px] text-blanc lg:text-para-ordi">
+				© 2024HandiTalk. Tous droits réservés. Consultez nos mentions légales et notre politique de confidentialité.
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>

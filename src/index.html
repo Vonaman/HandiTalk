@@ -1,0 +1,506 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HandiTalk</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nxh3bfr.css"> 
+	<link rel="shortcut icon" href="../assets/Logo_header.svg" type="image/x-icon">
+</head>
+<body class="flex flex-col items-center overflow-y-scroll">
+
+	<!--Nav ordi-->
+	<nav class="top-8 flex justify-between z-50 items-center w-4/5 fixed backdrop-blur-3xl rounded-full p-8">
+		<a class="text-3xl font-bold leading-none" href="#">
+			<img src="../assets/Logo_header.svg" alt="Logo de HandiTalk" class="w-1/2 h-auto">
+		</a>
+		<div class="lg:hidden">
+			<button class="navbar-burger flex items-center text-blue-600 p-3">
+				<img src="/assets/Menu_burger.svg" alt="Menu burger du header">
+			</button>
+		</div>
+		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+			<li><a class="text-3xl text-noir font-bold font-titre hover:scale-105 transition-500" href="#propos">À propos</a></li>
+			<li><a class="text-3xl text-noir font-bold font-titre hover:scale-105 transition-500" href="#">Équipe</a></li>
+			<li><a class="text-3xl text-noir font-bold font-titre hover:scale-105 transition-500" href="#">Blog</a></li>
+			<li><a class="text-3xl text-noir font-bold font-titre hover:scale-105 transition-500" href="#formation">Formation</a></li>
+		</ul>   
+		<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-bleu hover:bg-orange text-3xl text-blanc font-bold font-titre rounded-xl transition duration-500" href="#">Installation</a>
+	</nav>
+
+	<!--Nav tel-->
+	<div class="navbar-menu relative z-50 hidden">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-blanc border-r border-black overflow-y-auto">
+			<div class="flex items-center mb-8">
+				<a class="mr-auto text-3xl font-bold leading-none" href="#">
+					<img src="../assets/Logo_header.svg" alt="Logo de HandiTalk" class="w-1/2 h-auto">
+				</a>
+				<button class="navbar-close">
+					<img src="/assets/Menu_burger_croix.svg" alt="Croix du menu burger">
+				</button>
+			</div>
+			<div>
+				<ul>
+					<li class="mb-1">
+						<a class="text-titre-tel text-noir font-bold font-titre" href="#propos">À propos</a>
+					</li>
+					<li class="mb-1">
+						<a class="text-titre-tel text-noir font-bold font-titre" href="#">Équipe</a>
+					</li>
+					<li class="mb-1">
+						<a class="text-titre-tel text-noir font-bold font-titre" href="#">Blog</a>
+					</li>
+					<li class="mb-1">
+						<a class="text-titre-tel text-noir font-bold font-titre" href="#formation">Formation</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mt-auto">
+				<div class="pt-6">
+					<a class="block mb-3 leading-loose py-2 px-6 bg-bleu hover:bg-orange text-center text-titre-tel text-blanc font-bold font-titre rounded-xl transition duration-500" href="#">Installation</a>
+				</div>
+				<p class="my-4 text-xs text-center text-gray-400">
+					<span>Copyright © 2025</span>
+				</p>
+			</div>
+		</nav>
+	</div>
+
+	<!--Vidéo-->
+	<!-- <div class="absolute w-full h-[1080px] bg- z-20">
+		<img src="../assets/Blog/tit_bonhomme.jpeg" alt="">
+	</div> -->
+
+	<!--Logo début-->
+	<div class="fixed z-30 w-full h-[1080px] bg-[url(../assets/Blog/tit_bonhomme.jpeg)] bg-cover bg-center">
+		<div class="flex flex-col justify-between items-center gap-9 mt-72">
+			<img src="../assets/couleur fauteuil simple_petit.svg" class="h-52 w-auto lg:h-72" alt="">
+			<span class="relative h-1 rounded-full bg-blanc w-64 lg:hidden"></span>
+			<h1 class="text-titre-tel text-white drop-shadow-2xl shadow-black text-center font-titre font-bold w-3/5 lg:w-full lg:text-sous-ordi">
+				Exprimez-vous simplement, vivez pleinement
+			</h1>
+		</div>
+	</div>
+
+	<!--Background color test-->
+	<div class="relative bg-gradient-to-b from-orange via-blanc to-bleu top-[1080px] z-40 flex justify-center" >
+		<div class="m-[10%] top-[1080px]">
+			<div class="w-9/10 h-auto flex flex-col justify-between items-center gap-12 lg:gap-32">
+				<p class="font-paragraphe text-para-tel text-black lg:text-para-ordi">
+					Handi Talk est une application innovante conçue pour faciliter la communication des enfants et adultes en situation de handicap ou malvoyants. Grâce à un système intuitif de pictogrammes et de sons, elle permet d’échanger facilement avec son entourage. Son interface ergonomique et accessible garantit une prise en main rapide et fluide. Handi Talk favorise l’inclusion et l’autonomie en offrant un moyen d’expression simple et efficace. Adaptée à différents profils et besoins, l’application transforme la communication en un outil interactif et ludique. 
+				</p>
+				<div class="flex flex-col justify-between items-center gap-14">
+					<h1 class="font-titre text-titre-tel font-bold text-black lg:text-titre-ordi text-center" id="propos">
+						À propos de nous
+					</h1>
+					<div class="flex flex-col justify-between items-center w-full h-auto lg:flex-row-reverse gap-14">
+						<img src="../assets/Blog/fauteil_mur.jpeg" alt="" class="h-64 w-64 lg:h-[596px] lg:w-[596px] rounded-4xl bg-green-300">
+						<div class="flex flex-col justify-between items-start lg:items-center lg:w-1/2 gap-8">
+							<h2 class="font-titre text-sous-tel lg:text-sous-ordi text-noir font-bold">
+								Notre projet
+							</h2>
+							<p class="font-paragraphe text-para-tel lg:text-para-ordi text-noir">
+								Handi Talk est née d’une volonté d’inclusion et d’accessibilité. Conçue pour aider les personnes en situation de handicap ou malvoyantes, elle simplifie la communication grâce à des pictogrammes et des sons intuitifs. Notre mission est d’offrir un outil pratique, ludique et ergonomique qui permet à chacun de s’exprimer librement. Handi Talk s’adapte aux besoins de chaque utilisateur et favorise l’autonomie au quotidien.  
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="relative bg-gradient-to-b from-bleu via-blanc to-orange top-[1080px] z-40 flex justify-center w-full" h-auto>
+		<div class="w-9/10 h-auto flex flex-col justify-between items-center gap-12 lg:gap-32">
+			<div class="flex flex-col justify-between items-center w-full h-auto">
+				<h1 class="font-titre font-black text-titre-tel decoration-dotted decoration-bleu lg:text-titre-ordi">
+					Notre histoire
+				</h1>
+				<div class="flex flex-row w-full h-auto overflow-x-scroll overflow-y-hidden gap-48">
+
+					<div class="flex flex-col justify-start items-start w-1/3 h-auto gap-8">
+						<h2 class="font-titre text-sous-tel lg:text-[24px] text-noir font-bold">
+							Une idée
+						</h2>
+						<img src="../assets/Blog/best_player_ever.jpeg" class="h-16 w-16 rounded-2xs shadow-2xl shadow-orange lg:h-auto lg:w-32 lg:rounded-4xl" alt="">
+						<p class="font-paragraphe text-para-tel lg:text-[16px] text-noir text-justify">
+							Tout a commencé avec une simple observation : la communication est un défi quotidien pour de nombreuses personnes en situation de handicap. Comment leur offrir un outil simple, intuitif et efficace ? Cette question a été le point de départ de Handi Talk. 
+						</p>
+					</div>
+
+					<div class="relative flex flex-col justify-start items-start w-1/3 h-auto gap-8 top-16">
+						<h2 class="font-titre text-sous-tel lg:text-[24px] text-noir font-bold">
+							L’inspiration 
+						</h2>
+						<img src="../assets/Blog/fais_voir.jpeg" class="h-16 w-16 rounded-2xs shadow-2xl shadow-orange lg:h-auto lg:w-full lg:rounded-4xl" alt="">
+						<p class="font-paragraphe text-para-tel lg:text-[16px] text-noir text-justify">
+							En échangeant avec des familles et des professionnels, nous avons compris l’importance des pictogrammes et des sons pour faciliter l’interaction. L’idée d’une application accessible, qui mettrait ces outils au cœur de l’expérience, a alors germé.  
+						</p>
+					</div>
+
+					<div class="flex flex-col justify-start items-start w-1/3 h-auto gap-8">
+						<h2 class="font-titre text-sous-tel lg:text-[24px] text-noir font-bold">
+							L’esquisse
+						</h2>
+						<img src="../assets/Blog/check_moi_ca.jpeg" class="h-16 w-16 rounded-2xs shadow-2xl shadow-orange lg:h-auto lg:w-32 lg:rounded-4xl" alt="">
+						<p class="font-paragraphe text-para-tel lg:text-[16px] text-noir text-justify">
+							Au début, Handi Talk n’était qu’un croquis sur papier. Nous avons imaginé une interface fluide, facile à comprendre, qui permettrait à chacun de s’exprimer sans difficulté. Il fallait maintenant donner vie à cette vision. 
+						</p>
+					</div>
+
+					<div class="relative flex flex-col justify-start items-start w-1/3 h-auto gap-8 top-16">
+						<h2 class="font-titre text-sous-tel lg:text-[24px] text-noir font-bold">
+							Les prototypes
+						</h2>
+						<img src="../assets/Blog/fauteil.jpeg" class="h-16 w-16 rounded-2xs shadow-2xl shadow-orange lg:h-auto lg:w-32 lg:rounded-4xl" alt="">
+						<p class="font-paragraphe text-para-tel lg:text-[16px] text-noir text-justify">
+							Créer une application inclusive demandait de nombreux essais. Nous avons testé différentes versions avec des utilisateurs, écouté leurs retours, et peaufiné chaque détail pour offrir une expérience réellement adaptée à leurs besoins.  
+						</p>
+					</div>
+
+					<div class="flex flex-col justify-start items-start w-1/3 h-auto gap-8">
+						<h2 class="font-titre text-sous-tel lg:text-[24px] text-noir font-bold">
+							Approche humaine
+						</h2>
+						<img src="../assets/Blog/fauteil_mur.jpeg" class="h-16 w-16 rounded-2xs shadow-2xl shadow-orange lg:h-auto lg:w-32 lg:rounded-4xl" alt="">
+						<p class="font-paragraphe text-para-tel lg:text-[16px] text-noir text-justify">
+							Nous ne voulions pas seulement une application fonctionnelle, mais un outil qui crée du lien. Handi Talk devait être plus qu’un moyen de communication : un compagnon du quotidien qui apporte confiance et autonomie à ses utilisateurs.  
+						</p>
+					</div>
+
+					<div class="relative flex flex-col justify-start items-start w-1/3 h-auto gap-8 top-16">
+						<h2 class="font-titre text-sous-tel lg:text-[24px] text-noir font-bold">
+							L’émotion
+						</h2>
+						<img src="../assets/Blog/joie_fauteil.jpeg" class="h-16 w-16 rounded-2xs shadow-2xl shadow-orange lg:h-auto lg:w-32 lg:rounded-4xl" alt="">
+						<p class="font-paragraphe text-para-tel lg:text-[16px] text-noir text-justify">
+							Chaque progrès nous a rapprochés d’un objectif clair : rendre la communication accessible à tous. Voir les premières réactions des utilisateurs a été une source d’émotion et de motivation immense pour continuer à améliorer l’application. 
+						</p>
+					</div>
+
+					<div class="flex flex-col justify-start items-start w-1/3 h-auto gap-8">
+						<h2 class="font-titre text-sous-tel lg:text-[24px] text-noir font-bold">
+							Évolution
+						</h2>
+						<img src="../assets/Blog/ordi.jpeg" class="h-16 w-16 rounded-2xs shadow-2xl shadow-orange lg:h-auto lg:w-32 lg:rounded-4xl" alt="">
+						<p class="font-paragraphe text-para-tel lg:text-[16px] text-noir text-justify">
+							Aujourd’hui, Handi Talk est là, mais l’aventure ne fait que commencer. Nous continuons à innover, à écouter nos utilisateurs et à développer de nouvelles fonctionnalités pour faire de cette application un véritable pont vers l’inclusion. 
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col justify-between items-center w-full h-auto gap-32">
+				<h1 class="font-titre font-black text-titre-tel decoration-dotted decoration-bleu lg:text-titre-ordi">
+					Téléchargement
+				</h1>
+				<div class="flex flex-col gap-16 lg:flex-row justify-between items-center w-[70%] mx-[15%]">
+					<div class="flex flex-row items-center justify-center gap-2 rounded-2xl p-4 lg:gap-4 bg-orange lg:rounded-4xl lg:p-7 lg:px-20">
+						<img src="../assets/google_play.svg" alt="">
+						<img src="../assets/google_play_2.svg" alt="">
+					</div>
+					<div class="flex flex-row items-center justify-center gap-2 rounded-2xl p-4 lg:gap-4 bg-vert lg:rounded-4xl lg:p-7 lg:px-20">
+						<img src="../assets/app_store.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="relative bg-gradient-to-b from-orange via-blanc to-bleu top-[1080px] z-40 flex justify-center w-full pt-52">
+		<div class="w-9/10 h-auto flex flex-col justify-between items-center gap-2">
+			<div class="flex flex-col justify-between items-center w-full h-auto gap-8 lg:gap-32">
+				<h1 class="font-titre font-black text-titre-tel decoration-dotted decoration-bleu lg:text-titre-ordi">
+					Notre Article
+				</h1>
+				<div class="flex flex-row w-full h-auto justify-evenly items-center flex-wrap gap-16 lg:gap-48">
+					<div class="flex flex-col justify-around items-center bg-blanc rounded-4xl lg:rounded-[80px] w-7/10 lg:w-1/4 h-auto shadow-lg shadow-orange p-10">
+						<img src="../assets/Blog/fais_voir.jpeg" class="w-4/5 h-[100px] lg:w-[266px] lg:h-[151px] bg-amber-400 rounded-2xl lg:rounded-[41px]" alt="">
+						<h2 class="font-titre text-sous-tel lg:text-[24px]">
+							La communication
+						</h2>
+						<p class="font-paragraphe text-para-tel lg:text-para-[16px] text-noir text-center">
+							Révolutionner la communication inclusive grâce aux pictogrammes et sons
+						</p>
+						<a href="../src/Blog1.html" class="font-paragraphe text-[12px] lg:text-[14px] text-noir text-justify decoration-orange decoration-1 underline hover:text-orange mt-8" target="_blank">Lire</a>
+					</div>
+
+					<div class="flex flex-col justify-around items-center bg-blanc rounded-4xl lg:rounded-[80px] w-7/10 lg:w-1/4 h-auto shadow-lg shadow-bleu p-10">
+						<img src="../assets/Blog/fauteil_mur.jpeg" class="w-4/5 h-[100px] lg:w-[266px] lg:h-[151px] bg-amber-400 rounded-2xl lg:rounded-[41px]" alt="">
+						<h2 class="font-titre text-sous-tel lg:text-[24px]">
+							L'espoir
+						</h2>
+						<p class="font-paragraphe text-para-tel lg:text-para-[16px] text-noir text-center">
+							L’Espoir d’une Communication Accessible pour Tous
+						</p>
+						<a href="../src/Blog2.html" class="font-paragraphe text-[12px] lg:text-[14px] text-noir text-justify decoration-bleu decoration-1 underline hover:text-bleu mt-8" target="_blank">Lire</a>
+					</div>
+
+					<div class="flex flex-col justify-around items-center bg-blanc rounded-4xl lg:rounded-[80px] w-7/10 lg:w-1/4 h-auto shadow-lg shadow-vert p-10">
+						<img src="../assets/Blog/lego_cest_cool.jpeg" class="w-4/5 h-[100px] lg:w-[266px] lg:h-[151px] bg-amber-400 rounded-2xl lg:rounded-[41px]" alt="">
+						<h2 class="font-titre text-sous-tel lg:text-[24px]">
+							Aspect médicaux
+						</h2>
+						<p class="font-paragraphe text-para-tel lg:text-para-[16px] text-noir text-center">
+							Les aspects médicaux et thérapeutiques de Handitalk
+						</p>
+						<a href="../src/Blog3.html" class="font-paragraphe text-[12px] lg:text-[14px] text-noir text-justify decoration-vert decoration-1 underline hover:text-vert mt-8" target="_blank">Lire</a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="flex flex-col justify-between items-center w-full h-auto gap-12 lg:gap-32 mt-14">
+				<h1 class="font-titre font-black text-titre-tel decoration-dotted decoration-bleu lg:text-titre-ordi">
+					Notre équipe de choc
+				</h1>
+				<div class="flex flex-col w-full h-auto gap-16">
+
+					<!--Riam-->
+					<div class="hidden lg:flex lg:flex-row lg:justify-between items-center w-full h-auto">
+						<div class="flex flex-col justify-between items-start w-1/2 gap-10">
+							<h2 class="font-titre text-sous-ordi text-noir">
+								Riam Delacroix
+							</h2>
+							<h3 class="font-para text-para-ordi text-noir">
+								Le responsable formation blagueur
+							</h3>
+							<p class="font-para text-para-ordi text-noir">
+								Toujours un mot pour détendre l’atmosphère, Riam Delacroix sait rendre chaque formation dynamique et agréable. Son humour est sa marque de fabrique, mais derrière ses blagues se cache un véritable expert, passionné par l’accessibilité et la pédagogie. Son objectif : transmettre son savoir avec légèreté tout en garantissant un apprentissage efficace et adapté à tous.
+							</p>
+						</div>
+						<img src="../assets/Riam.png" alt="Riam DELACROIX">
+					</div>
+					<div class="flex flex-row justify-between items-center w-full h-auto lg:hidden">
+						<div class="flex flex-col justify-between items-start gap-10">
+							<div class="flex flex-row justify-around w-full ">
+								<img src="../assets/Riam.png" alt="Riam DELACROIX" class="w-1/2">
+								<div class="flex flex-col w-1/3">
+									<h2 class="font-titre text-sous-tel text-noir">
+										Riam Delacroix
+									</h2>
+									<h3 class="font-para text-para-tel text-noir">
+										Le responsable formation blagueur
+									</h3>
+								</div>
+							</div>
+							<p class="font-para text-para-tel text-noir">
+								Toujours un mot pour détendre l’atmosphère, Riam Delacroix sait rendre chaque formation dynamique et agréable. Son humour est sa marque de fabrique, mais derrière ses blagues se cache un véritable expert, passionné par l’accessibilité et la pédagogie. Son objectif : transmettre son savoir avec légèreté tout en garantissant un apprentissage efficace et adapté à tous.
+							</p>
+						</div>
+					</div>
+
+
+					<!--Jeanne-->
+					<div class="hidden lg:flex lg:flex-row-reverse lg:justify-between items-center w-full h-auto">
+						<div class="flex flex-col justify-between items-start w-1/2 gap-10">
+							<h2 class="font-titre text-sous-ordi text-noir text-end w-full">
+								Jeanne Legrand
+							</h2>
+							<h3 class="font-para text-para-ordi text-noir text-end w-full">
+								La formatrice souriante
+							</h3>
+							<p class="font-para text-para-ordi text-noir text-end">
+								Avec son sourire communicatif, Jeanne Legrand sait mettre en confiance ses apprenants dès les premiers instants. Son approche chaleureuse et patiente fait d’elle une formatrice appréciée de tous. Toujours à l’écoute, elle adapte son enseignement pour que chacun puisse progresser à son rythme, dans une ambiance bienveillante et motivante. 
+							</p>
+						</div>
+						<img src="../assets/Jeanne.png" alt="Jeanne LEGRAND">
+					</div>
+					<div class="flex flex-row justify-between items-center w-full h-auto lg:hidden">
+						<div class="flex flex-col justify-between items-start gap-10">
+							<div class="flex flex-row-reverse justify-around w-full ">
+								<img src="../assets/Jeanne.png" alt="Riam DELACROIX" class="w-1/2">
+								<div class="flex flex-col w-1/3">
+									<h2 class="font-titre text-sous-tel text-noir text-end">
+										Jeanne Legrand
+									</h2>
+									<h3 class="font-para text-para-tel text-noir text-end">
+										La formatrice souriante
+									</h3>
+								</div>
+							</div>
+							<p class="font-para text-para-tel text-noir text-end">
+								Avec son sourire communicatif, Jeanne Legrand sait mettre en confiance ses apprenants dès les premiers instants. Son approche chaleureuse et patiente fait d’elle une formatrice appréciée de tous. Toujours à l’écoute, elle adapte son enseignement pour que chacun puisse progresser à son rythme, dans une ambiance bienveillante et motivante.
+							</p>
+						</div>
+					</div>
+
+					<!--Angélique-->
+					<div class="hidden lg:flex lg:flex-row lg:justify-between items-center w-full h-auto">
+						<div class="flex flex-col justify-between items-start w-1/2 gap-10">
+							<h2 class="font-titre text-sous-ordi text-noir">
+								Angélique Larcher
+							</h2>
+							<h3 class="font-para text-para-ordi text-noir">
+								La formatrice bienveillante
+							</h3>
+							<p class="font-para text-para-ordi text-noir">
+								Angélique Larcher incarne la bienveillance et l’accompagnement personnalisé. Douce et attentive, elle met un point d’honneur à ce que chaque apprenant se sente compris et valorisé. Grâce à son approche pédagogique centrée sur l’humain, elle transforme chaque formation en une expérience enrichissante et inclusive. 
+							</p>
+						</div>
+						<img src="../assets/Angelique.png" alt="Riam DELACROIX">
+					</div>
+					<div class="flex flex-row justify-between items-center w-full h-auto lg:hidden">
+						<div class="flex flex-col justify-between items-start gap-10">
+							<div class="flex flex-row justify-around w-full ">
+								<img src="../assets/Angelique.png" alt="Riam DELACROIX" class="w-1/2">
+								<div class="flex flex-col w-1/3">
+									<h2 class="font-titre text-sous-tel text-noir">
+										Angélique Larcher
+									</h2>
+									<h3 class="font-para text-para-tel text-noir">
+										La formatrice bienveillante
+									</h3>
+								</div>
+							</div>
+							<p class="font-para text-para-tel text-noir">
+								Angélique Larcher incarne la bienveillance et l’accompagnement personnalisé. Douce et attentive, elle met un point d’honneur à ce que chaque apprenant se sente compris et valorisé. Grâce à son approche pédagogique centrée sur l’humain, elle transforme chaque formation en une expérience enrichissante et inclusive. 
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="relative bg-gradient-to-b from-bleu via-blanc to-orange	 top-[1080px] z-40 flex justify-center w-full pt-24 lg:pt-52" id="formation">
+		<div class="w-9/10 h-auto flex flex-col justify-between items-center gap-2">
+			<div class="flex flex-col justify-between items-center w-full h-auto gap-12 lg:gap-32">
+				<h1 class="font-titre font-black text-titre-tel decoration-dotted decoration-bleu lg:text-titre-ordi">
+					Notre formation
+				</h1>
+				<div class="flex flex-col-reverse lg:flex-col w-4/5 h-auto gap-16">
+					<img src="../assets/formation.png" alt="HandiTalk">
+					<p class="font-para text-para-tel lg:text-para-ordi text-noir text-center">
+						Nous proposons une formation complète et interactive, conçue pour accompagner chaque participant dans son apprentissage. Notre approche pratique et théorique permet de comprendre les concepts clés tout en développant des compétences concrètes. Que vous soyez débutant ou avancé, nos formateurs expérimentés vous guideront à travers des modules adaptés, vous assurant un développement progressif et personnalisé. Grâce à une méthode flexible et accessible, cette formation est l’occasion idéale de renforcer vos connaissances et de vous épanouir dans un environnement stimulant.
+					</p>
+				</div>
+			</div>
+
+			<div class="flex flex-col justify-between items-center w-full h-auto gap-12 lg:gap-32 mt-16 pb-16">
+				<h1 class="font-titre font-black text-titre-tel decoration-dotted decoration-bleu lg:text-titre-ordi">
+					Inscrivez-vous !
+				</h1>
+				<div class="flex flex-row justify-between w-4/5 h-auto gap-16">
+					<img src="../assets/inscription.png" alt="" class="hidden lg:block">
+					<div class="flex flex-col justify-between items-center h-auto w-full gap-4 lg:w-1/3 ">
+						<input type="text" class="w-full p-4 bg-blanc rounded-full shadow-2xl caret-orange focus:outline-4 focus:outline-orange " placeholder="Nom">
+						<input type="text" class="w-full p-4 bg-blanc rounded-full shadow-2xl caret-orange focus:outline-4 focus:outline-orange " placeholder="Prenom">
+						<input type="text" class="w-full p-4 bg-blanc rounded-full shadow-2xl caret-orange focus:outline-4 focus:outline-orange " placeholder="Email">
+						<input type="text" class="w-full p-4 bg-blanc rounded-full shadow-2xl caret-orange focus:outline-4 focus:outline-orange " placeholder="Numéro de téléphone">
+						<a class="block py-2 px-6 bg-bleu hover:bg-vert text-3xl text-blanc font-bold font-titre rounded-full transition duration-500" href="#">Envoyez !</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Footer-->
+
+	<footer class="relative hidden top-[1080px] lg:block flex-col justify-center items-center p-16 pb-4 bg-noir w-full h-auto z-40">
+		<div class="flex flex-row justify-between items-start w-full mb-11">
+			<ul class="flex flex-col lg:w-1/3 h-auto gap-16">
+				<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi  decoration-solid" href="">Qui sommes nous ?</a></li>
+				<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi decoration-1 decoration-solid" href="">Notre formation</a></li>
+				<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi decoration-1 decoration-solid" href="">Téléchargement</a></li>
+				<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi decoration-1 decoration-solid" href="">Nos derniers articles</a></li>
+			</ul>
+
+			<div class="flex flex-col justify-between items-center lg:w-1/3 h-auto gap-10">
+				<img src="../assets/couleur fauteuil simple_petit.svg" class="w-64 h-64" alt="">
+				<div class="flex flex-col gap-16 lg:flex-row justify-between items-center border-blanc border-t-2 pt-16">
+					<div class="flex flex-row items-center justify-center gap-2 rounded-2xl p-4 lg:gap-4 bg-orange lg:rounded-4xl lg:py-4 lg:px-10">
+						<img src="../assets/google_play.svg" alt="">
+						<img src="../assets/google_play_2.svg" alt="">
+					</div>
+					<div class="flex flex-row items-center justify-center gap-2 rounded-2xl p-4 lg:gap-4 bg-vert lg:rounded-4xl lg:p-4 lg:px-10">
+						<img src="../assets/app_store.svg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-col justify-between items-center w-1/3 h-auto gap-8">
+				<h2 class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi decoration-solid decoration-1 decoration-blanc">
+					Nous contacter
+				</h2>
+				<div class="flex flex-col justify-between items-center gap-4">
+					<a href="" class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi">+33 1 02 03 04 05</a>
+					<a href="" class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi">contact@handitalk.org</a>
+				</div>
+				<div class="flex flex-row flex-wrap justify-evenly items-center gap-8 w-56">
+					<img src="../assets/reseaux/facebook.svg" alt="" class="h-12 w-auto hover:scale-110 duration-500">
+					<img src="../assets/reseaux/insta.svg" alt="" class="h-12 w-auto hover:scale-110 duration-500">
+					<img src="../assets/reseaux/linkedIn.svg" alt="" class="h-12 w-auto hover:scale-110 duration-500">
+					<img src="../assets/reseaux/TikTok.svg" alt="" class="h-12 w-auto hover:scale-110 duration-500">
+					<img src="../assets/reseaux/Ytb.svg" alt="" class="h-12 w-auto hover:scale-110 duration-500">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="border-t-4 border-blanc flex justify-center ">
+			<p class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi">
+				© 2024HandiTalk. Tous droits réservés. Consultez nos mentions légales et notre politique de confidentialité.
+			</p>
+		</div>
+	</footer>
+
+
+
+
+
+	<footer class="relative top-[1080px] flex-col justify-center items-center p-16 pb-4 bg-noir w-full h-auto z-40 lg:hidden">
+		<div class="flex flex-col justify-between items-start w-full mb-11 gap-9">
+
+			<div class="flex flex-col justify-between items-center h-auto gap-10">
+				<img src="../assets/couleur fauteuil simple_petit.svg" class="w-36 h-36" alt="">
+				<div class="flex gap-16 flex-row justify-between items-center border-blanc border-t-2 pt-4">
+					<div class="flex flex-row items-center justify-center gap-2 rounded-2xl p-4 lg:gap-4 bg-orange lg:rounded-4xl lg:py-4 lg:px-10">
+						<img src="../assets/ggplay.svg" alt="">
+					</div>
+					<div class="flex flex-row items-center justify-center gap-2 rounded-2xl p-4 lg:gap-4 bg-vert lg:rounded-4xl lg:p-4 lg:px-10">
+						<img src="../assets/app_store.svg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-row justify-between items-start w-full">
+				<ul class="flex flex-col w-1/2 h-auto gap-4">
+					<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi  decoration-solid" href="">Qui sommes nous ?</a></li>
+					<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi decoration-1 decoration-solid" href="">Notre formation</a></li>
+					<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi decoration-1 decoration-solid" href="">Téléchargement</a></li>
+					<li><a class="text-blanc font-paragraphe text-para-tel lg:text-para-ordi decoration-1 decoration-solid" href="">Nos derniers articles</a></li>
+				</ul>
+	
+				<div class="flex flex-col justify-between items-center w-1/2 h-auto gap-4">
+					<h2 class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi decoration-solid decoration-1 decoration-blanc">
+						Nous contacter
+					</h2>
+					<div class="flex flex-col justify-between items-center gap-2">
+						<a href="" class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi">+33 1 02 03 04 05</a>
+						<a href="" class="font-paragraphe text-para-tel text-blanc lg:text-para-ordi">contact@handitalk.org</a>
+					</div>
+					<div class="flex flex-row flex-wrap justify-evenly items-center gap-4 w-32">
+						<img src="../assets/reseaux/facebook.svg" alt="" class="h-6 w-auto hover:scale-110 duration-500">
+						<img src="../assets/reseaux/insta.svg" alt="" class="h-6 w-auto hover:scale-110 duration-500">
+						<img src="../assets/reseaux/linkedIn.svg" alt="" class="h-6 w-auto hover:scale-110 duration-500">
+						<img src="../assets/reseaux/TikTok.svg" alt="" class="h-6 w-auto hover:scale-110 duration-500">
+						<img src="../assets/reseaux/Ytb.svg" alt="" class="h-6 w-auto hover:scale-110 duration-500">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="border-t-4 border-blanc flex justify-center ">
+			<p class="font-paragraphe text-[6px] text-blanc lg:text-para-ordi">
+				© 2024HandiTalk. Tous droits réservés. Consultez nos mentions légales et notre politique de confidentialité.
+			</p>
+		</div>
+	</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
